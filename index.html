@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>エスカレーターストップ - 安全のために</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="intro">
+    <h1>エスカレーターストップ</h1>
+    <p>歩くの、やめませんか？</p>
+  </div>
+
+  <div class="content">
+    <h2>なぜ歩いてはいけないのか？</h2>
+    <p>エスカレーターでの歩行は転倒や接触事故の原因となり、実際に死亡事故も発生しています。「マナーだから歩く」ではなく、「命を守るために立ち止まる」という選択を。</p>
+
+    <h2>あなたの声を聞かせてください</h2>
+    <p>下記のフォームからご意見をお寄せください。</p>
+
+    <form action="https://api.staticforms.xyz/submit" method="POST">
+      <input type="hidden" name="accessKey" value="sf_96elgkl5k4d6823d52bck1b1">
+      <input type="hidden" name="redirectTo" value="thanks.html">
+
+      <label for="message">メッセージ:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <label for="email">メールアドレス（任意）:</label><br>
+      <input id="email" type="email" name="email" placeholder="your@email.com"><br><br>
+
+      <div class="g-recaptcha" data-sitekey="6LfCDHUrAAAAAD2UKymr1gHr4zQrIcFFf2z6KoqG"></div><br>
+      <button type="submit">送信する</button>
+    </form>
+  </div>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>
